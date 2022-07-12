@@ -1,0 +1,107 @@
+.header-img {
+    background-image: url('./images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    height: 100vh;
+}
+
+.header-div {
+    background-color: rgba(237, 249, 253, 0.7);
+    height: 100%;
+}
+
+.intro i {
+    background: -webkit-linear-gradient(45deg, rgb(0, 191, 255), rgb(177, 21, 208));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.auto-typed-text {
+    background: -webkit-linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237)), rgb(177, 21, 208);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mybtn {
+    background: linear-gradient(45deg, rgb(47, 128, 237), rgb(71, 216, 245));
+}
+
+.chevron-container{
+    position: absolute;
+    bottom: 7rem;
+}
+
+.chevron {
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: black;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+.about-me-img{
+    width: 50%;
+    height: 20rem;
+    position: static;
+}
+
+.about-me-img img{
+    width: 100%;
+    height: 100%;
+}
