@@ -96,12 +96,16 @@ section{
 }
 
 .about-me-img{
-    width: 50%;
-    height: 20rem;
+    width: 80%;
+    height: 100vh;
     position: static;
 }
 
 .about-me-img img{
     width: 100%;
     height: 100%;
+}
+
+.first-card{
+    height: 262px;
 }

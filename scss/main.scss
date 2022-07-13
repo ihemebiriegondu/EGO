@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
 $primary: rgb(47, 128, 237);
 $secondary: rgb(178, 255, 218);
 $light: #edf9fd;
@@ -10,14 +22,22 @@ $navbar-light-hover-color: $primary;
 
 $navbar-light-toggler-border-color: rgba($primary, 0);
 
+$progress-bg: $gray-400;
+$progress-border-radius: 20px;
+$progress-bar-color: $white;
+$progress-bar-bg: cyan;
 
-
+$card-border-width: 0;
 
 
 body {
     width: 100%;
     background-color: #fefefe;
     overflow-x: hidden;
+}
+
+section {
+    background-color: rgb(250, 252, 254);
 }
 
 button.navbar-toggler:focus,
@@ -82,6 +102,11 @@ section {
 
 .navbar-light .navbar-nav .nav-link.active::after {
     width: 100%;
+}
+
+.first-card{
+    background-color: $gray-200 !important;
+    border-radius: 10px !important;
 }
 
 
