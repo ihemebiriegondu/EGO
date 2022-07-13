@@ -15,6 +15,7 @@ $black: #000;
 $primary: rgb(47, 128, 237);
 $secondary: rgb(178, 255, 218);
 $light: #edf9fd;
+$warning: #ecb40b;
 
 
 $navbar-light-color: $primary;
@@ -28,6 +29,25 @@ $progress-bar-color: $white;
 $progress-bar-bg: cyan;
 
 $card-border-width: 0;
+
+$input-focus-border-color: transparent;
+$input-focus-color: black;
+$input-focus-width: 0;
+$input-focus-box-shadow: none;
+
+$carousel-control-color: $primary;
+$carousel-control-width: 15%;
+$carousel-control-opacity: 1;
+$carousel-control-hover-opacity: .5;
+
+$carousel-indicator-width: 12px;
+$carousel-indicator-height: 12px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer: 3px;
+$carousel-indicator-opacity: .5;
+$carousel-indicator-active-bg: $primary;
+$carousel-indicator-active-opacity: 1;
+
 
 
 body {
@@ -104,8 +124,8 @@ section {
     width: 100%;
 }
 
-.first-card{
-    background-color: $gray-200 !important;
+.first-card {
+    background-color: $gray-200  !important;
     border-radius: 10px !important;
 }
 

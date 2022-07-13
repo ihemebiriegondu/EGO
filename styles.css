@@ -109,3 +109,12 @@ section{
 .first-card{
     height: 262px;
 }
+
+.new-card{
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+textarea{
+    resize: none;
+}
