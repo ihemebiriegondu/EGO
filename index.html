@@ -25,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto me-lg-0 d-flex align-items-center mt-2">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto me-lg-0 d-lg-flex d-none align-items-center mt-2">
                         <li class="nav-item p-0 h5 me-5">
                             <a class="nav-link only-nav p-0 pb-2 text-primary active" aria-current="page"
                                 href="./index.html">Home</a>
@@ -52,6 +52,36 @@
                             <i class="bi bi-moon-fill text-primary"></i>
                             <!--<i class="bi bi-brightness-low-fill text-danger h2"></i>-->
                         </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto me-lg-0 d-lg-none d-flex align-items-center mt-2">
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="./index.html" class="mb-4 text-white"><i class="bi bi-house-door fs-3"></i></a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="#about-me" class="mb-4 text-white"><i class="bi bi-person-fill fs-3"></i></a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="#skills" class="mb-4 text-white"><i class="bi bi-file-earmark-code fs-3"></i></a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="#services" class="mb-4 text-white"><i class="bi bi-briefcase fs-3"></i></a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="#portfolio" class="mb-4 text-white"><i class="bi bi-image fs-3"></i></a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a class="nav-link only-nav p-0 pb-2 text-primary" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item p-0 h5 me-5">
+                            <a href="#contact" class="mb-4 text-white"><i class="bi bi-send fs-3"></i></a>
+                        </li>
+                        <li class="nav-item h5 pb-2">
+                            <i class="bi bi-moon-fill text-primary"></i>
+                            <!--<i class="bi bi-brightness-low-fill text-danger h2"></i>-->
+                        </li>
+                    </ul>
+                    <ul>
+
                     </ul>
                 </div>
             </div>
@@ -86,9 +116,7 @@
                 </div>
                 <div>
                     <a href="#about-me" class="chevron-container">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
+                        <i class="bi bi-chevron-double-down text-dark fs-2"></i>
                     </a>
                 </div>
             </div>
@@ -96,7 +124,8 @@
     </header>
 
     <main class="bg-light">
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-sm-0 py-5"
+        <section
+            class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-sm-0 py-5 long-section"
             id="about-me">
             <div class="col-11 m-auto">
                 <h3 class="text-center mb-4 d-sm-none d-block">About Me</h3>
@@ -122,11 +151,11 @@
                                     sint culpa, vero optio? Asperiores?</p>
                             </div>
                             <div class="d-flex align-items-center justify-content-around mt-sm-5 mt-2">
-                                <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex flex-column align-items-center text-center">
                                     <p class="display-5 mb-0 fw-normal">01+</p>
-                                    <p class="text-break fs-sm-5">Years of experience</p>
+                                    <p class="text-break fs-sm-5 me-3">Years of experience</p>
                                 </div>
-                                <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex flex-column align-items-center text-center">
                                     <p class="display-5 mb-0 fw-normal">06+</p>
                                     <p class="fs-sm-5 text-break">Completed projects</p>
                                 </div>
@@ -142,8 +171,8 @@
             </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto" id="skills"
-            style="background-color: rgba(47, 128, 237, 0.04);">
+        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-5"
+            id="skills" style="background-color: rgba(47, 128, 237, 0.04);">
             <div class="col-11 m-auto">
                 <div class="">
                     <h2 class="text-center mb-4">Skills</h2>
@@ -202,8 +231,7 @@
                 </div>
             </div>
         </section>
-        <section
-            class="d-flex flex-column justify-content-center align-items-center pb-5 pt-5 m-auto long-section"
+        <section class="d-flex flex-column justify-content-center align-items-center pb-5 pt-5 m-auto long-section"
             id="services">
             <div class="col-11 m-auto">
                 <h2 class="text-center mb-4">Services</h2>
@@ -212,7 +240,7 @@
                         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 text-center justify-content-center">
                             <div class="col">
                                 <div class="card first-card pt-xl-4 pt-lg-2 pt-4">
-                                    <div class="card-body">
+                                    <div class="card-body overflow-auto">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
                                         <h5 class="card-title">HTML & CSS Responsive Web Designs</h5>
                                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -223,7 +251,7 @@
                             </div>
                             <div class="col">
                                 <div class="card first-card pt-4">
-                                    <div class="card-body">
+                                    <div class="card-body overflow-auto">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
                                         <i class="fa-brands fa-css3-alt"></i>
                                         <i class="fa-brands fa-css3"></i>
@@ -237,7 +265,7 @@
                             </div>
                             <div class="col">
                                 <div class="card first-card pt-4">
-                                    <div class="card-body">
+                                    <div class="card-body overflow-auto">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
                                         <h5 class="card-title">JavaScript Development</h5>
                                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -252,7 +280,7 @@
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center justify-content-center">
                             <div class="col me-xl-3 me-0">
                                 <div class="card first-card pt-4">
-                                    <div class="card-body">
+                                    <div class="card-body overflow-auto">
                                         <div class="mb-3 ">
                                             <i class="bi bi-images fs-3"></i>
                                             <i class="bi bi-arrow-right-short fs-3"></i>
@@ -268,7 +296,7 @@
                             </div>
                             <div class="col ms-xl-3 ms-0">
                                 <div class="card first-card pt-4">
-                                    <div class="card-body">
+                                    <div class="card-body overflow-auto">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
                                         <h5 class="card-title">CMS Theming services</h5>
                                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -282,62 +310,61 @@
                 </div>
             </div>
         </section>
-        <section class="pt-5 long-section pb-md-0 pb-5" id="portfolio"
-            style="background-color: rgba(47, 128, 237, 0.3);">
+        <section class="pt-5 long-section pb-5" id="portfolio" style="background-color: rgba(47, 128, 237, 0.3);">
             <h2 class="text-center">My Recent Projects</h2>
             <div class="heading-line"></div>
-            <div class="d-flex flex-column justify-content-center align-items-center col-11 m-auto mb-md-0 mb-2">
+            <div class="d-flex flex-column justify-content-center align-items-center col-11 m-auto mb-xl-0 mb-2">
                 <div class="d-flex scroll col-12" style="overflow-x: auto; overflow-y: hidden;">
                     <div
-                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
-                        <div class="col-md-6 project-box-first-div">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
-                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                        <div class="col-xl-6 pt-xl-5 pt-0 ps-xl-5 pe-xl-5 text-xl-start text-center pb-0">
                             <h4 class="fs-2">Machu Picchu</h4>
                             <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
                             <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
                         </div>
                     </div>
                     <div
-                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
-                        <div class="col-md-6 project-box-first-div">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
-                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                        <div class="col-xl-6 pt-xl-5 pt-0 ps-xl-5 pe-xl-5 text-xl-start text-center pb-0">
                             <h4 class="fs-2">Machu Picchu</h4>
                             <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
                             <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
                         </div>
                     </div>
                     <div
-                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
-                        <div class="col-md-6 project-box-first-div">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
-                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                        <div class="col-xl-6 pt-xl-5 pt-0 ps-xl-5 pe-xl-5 text-xl-start text-center pb-0">
                             <h4 class="fs-2">Machu Picchu</h4>
                             <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
                             <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
                         </div>
                     </div>
                     <div
-                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
-                        <div class="col-md-6 project-box-first-div">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
-                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                        <div class="col-xl-6 pt-xl-5 pt-0 ps-xl-5 pe-xl-5 text-xl-start text-center pb-0">
                             <h4 class="fs-2">Machu Picchu</h4>
                             <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
                             <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
                         </div>
                     </div>
                     <div
-                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 bg-white col-8 mb-5 m-auto shadow">
-                        <div class="col-md-6 project-box-first-div">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
-                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                        <div class="col-xl-6 pt-xl-5 pt-0 ps-xl-5 pe-xl-5 text-xl-start text-center pb-0">
                             <h4 class="fs-2">Machu Picchu</h4>
                             <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
                             <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
@@ -350,7 +377,8 @@
             <h2 class="text-center">Reviews</h2>
             <h6 class="text-center">What my clients says</h6>
             <div class="d-flex flex-column justify-content-center align-items-center m-auto">
-                <div id="carouselExampleIndicators" class="carousel slide col-sm-10" data-bs-ride="true">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade col-sm-10"
+                    data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
@@ -359,7 +387,7 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3" class="rounded-circle"></button>
                     </div>
-                    <div class="p-5 m-auto carousel-inner w-75 mb-4">
+                    <div class="px-md-5 py-5 px-0 m-auto carousel-inner w-75 mb-4">
                         <div class="carousel-item active">
                             <div class="d-flex flex-column justify-content-between align-items-center">
                                 <div class="d-flex align-items-center mb-3 rounded-circle"
@@ -426,8 +454,8 @@
                 </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-sm-0 py-5" id="contact"
-            style="background-color: rgba(47, 128, 237, 0.302);">
+        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-5"
+            id="contact" style="background-color: rgba(47, 128, 237, 0.302);">
             <div class="col-11 m-auto">
                 <h2 class="text-sm-center mb-sm-5 mb-4">Contact Me</h2>
                 <div class="row row-cols-md-2 row-cols-1">
@@ -493,6 +521,7 @@
                 <a href="#skills" class="mb-4 text-white"><i class="bi bi-file-earmark-code fs-3"></i></a>
                 <a href="#services" class="mb-4 text-white"><i class="bi bi-briefcase fs-3"></i></a>
                 <a href="#portfolio" class="mb-4 text-white"><i class="bi bi-image fs-3"></i></a>
+                <a href="#reviews" class="mb-4 text-white"><i class="bi bi-stars"></i></a>
                 <a href="#contact" class="mb-4 text-white"><i class="bi bi-send fs-3"></i></a>
             </div>
         </div>

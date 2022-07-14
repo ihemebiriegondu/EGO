@@ -37,6 +37,10 @@ sections.forEach(section => {
     });
 });
 
+$(document).ready(function () {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+
 //drop shadow on navbar when scrolling
 let showBoxShadow = () => {
     const nav = document.querySelector("nav")
