@@ -9,20 +9,14 @@
 
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./fontawesome.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="row">
         <nav class="navbar-light navbar navbar-expand-lg p-0 bg-light">
             <div class="container-fluid col-12 m-auto d-flex justify-content-between">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <h1 class="display-3 animate-character mb-0 pb-2">Ego</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,7 +48,7 @@
                         <li class="nav-item p-0 h5 me-5">
                             <a class="nav-link only-nav p-0 pb-2 text-primary" href="#contact">Contact</a>
                         </li>
-                        <li class="nav-item h5">
+                        <li class="nav-item h5 pb-2">
                             <i class="bi bi-moon-fill text-primary"></i>
                             <!--<i class="bi bi-brightness-low-fill text-danger h2"></i>-->
                         </li>
@@ -64,22 +58,29 @@
         </nav>
         <div class="header-img">
             <div class="header-div d-flex flex-column justify-content-center align-items-center m-auto">
-                <div class="row mt-5">
-                    <div class="col-2 d-flex">
-                        <div class="ms-md-3 d-flex flex-column justify-content-center intro">
+                <div class="row col-md-11 col-12 mt-md-5 mt-0 mx-auto">
+                    <div class="col-2 d-sm-flex d-none">
+                        <div class="ms-md-3 d-flex ms-4 flex-column justify-content-center intro">
                             <i class="bi bi-linkedin h4 mb-4"></i>
                             <i class="bi bi-github h4 mb-4"></i>
                             <i class="bi bi-twitter h4 mb-4"></i>
                         </div>
                     </div>
-                    <div class="col-10">
+                    <div class="col-sm-10 col-12">
                         <div>
-                            <h1 class="lh-lg">Hi, I'm <span class="auto-typed-text display-4"></span></h1>
-                            <p class="w-75 w-md-100 fs-5 lh-base ms-3 ms-lg-0">Lorem ipsum dolor sit amet consectetur
+                            <h1 class="lh-lg">Hi, I'm <span class="auto-typed-text display-4 text-break"></span></h1>
+                            <p class="intro-text fs-5 lh-base ">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Quibusdam molestias eius, eligendi ex
                                 cupiditate quia cum nulla id natus sapiente!</p>
-                            <button class="btn mybtn text-white mt-3 px-5 py-3" style="border-radius: 10px;">Contact
-                                Me</button>
+                            <div class="ms-md-3 d-sm-none d-flex ms-4 justify-content-center intro">
+                                <i class="bi bi-linkedin h4 mb-4 me-4"></i>
+                                <i class="bi bi-github h4 mb-4 me-4"></i>
+                                <i class="bi bi-twitter h4 mb-4 me-4"></i>
+                            </div>
+                            <div class="text-sm-start text-center">
+                                <button class="btn mybtn text-white mt-3 px-5 py-3" style="border-radius: 10px;">Contact
+                                    Me <i class="bi bi-send ms-3 text-secondary"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,20 +95,25 @@
         </div>
     </header>
 
-    <main>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto" id="about-me">
+    <main class="bg-light">
+        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-sm-0 py-5"
+            id="about-me">
             <div class="col-11 m-auto">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="about-me-img">
-                            <img src="./images/IMG_20210807_122156_024-removebg-preview.png" alt="">
+                <h3 class="text-center mb-4 d-sm-none d-block">About Me</h3>
+                <div class="row row-cols-sm-2 row-cols-1">
+                    <div class="col-sm-6 mb-sm-0 mb-3">
+                        <div class="about-me-img text-center p-3">
+                            <div class="about-me-img-first">
+                                <img src="./images/IMG_20210807_122156_024-removebg-preview.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center about-me-text">
+                    <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center about-me-text">
                         <div class="d-flex flex-column justify-content-between">
                             <div>
-                                <h3 class="text-center mb-4">About Me</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic possimus impedit,
+                                <h3 class="text-center mb-4 d-sm-block d-none pt-md-0 pt-4">About Me</h3>
+                                <p class="text-sm-start text-center">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Hic possimus impedit,
                                     corrupti,
                                     cumque
                                     magni unde, consequuntur dolorem molestias quo maiores iusto? Eaque labore
@@ -115,19 +121,19 @@
                                     officiis
                                     sint culpa, vero optio? Asperiores?</p>
                             </div>
-                            <div class="d-flex align-items-center justify-content-around mt-5">
+                            <div class="d-flex align-items-center justify-content-around mt-sm-5 mt-2">
                                 <div class="d-flex flex-column align-items-center">
                                     <p class="display-5 mb-0 fw-normal">01+</p>
-                                    <p class="text-break fs-5">Years of experience</p>
+                                    <p class="text-break fs-sm-5">Years of experience</p>
                                 </div>
                                 <div class="d-flex flex-column align-items-center">
                                     <p class="display-5 mb-0 fw-normal">06+</p>
-                                    <p class="fs-5 text-break">Completed projects</p>
+                                    <p class="fs-sm-5 text-break">Completed projects</p>
                                 </div>
                             </div>
-                            <div class="text-center mt-5">
+                            <div class="text-center mt-sm-5 mt-2">
                                 <button class="btn mybtn text-white mt-3 px-5 py-3" style="font-size: 17px;">Download
-                                    CV</button>
+                                    CV <i class="bi bi-download ms-3 fs-5"></i></button>
                             </div>
                         </div>
                     </div>
@@ -196,14 +202,16 @@
                 </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto" id="services">
+        <section
+            class="d-flex flex-column justify-content-center align-items-center pb-5 pt-5 m-auto long-section"
+            id="services">
             <div class="col-11 m-auto">
                 <h2 class="text-center mb-4">Services</h2>
                 <div class="intro">
                     <div class="mb-4">
-                        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 text-center justify-content-center">
                             <div class="col">
-                                <div class="card first-card pt-4">
+                                <div class="card first-card pt-xl-4 pt-lg-2 pt-4">
                                     <div class="card-body">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
                                         <h5 class="card-title">HTML & CSS Responsive Web Designs</h5>
@@ -241,8 +249,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class="row row-cols-1 row-cols-md-3 g-5 text-center justify-content-center">
-                            <div class="col">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center justify-content-center">
+                            <div class="col me-xl-3 me-0">
                                 <div class="card first-card pt-4">
                                     <div class="card-body">
                                         <div class="mb-3 ">
@@ -258,7 +266,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col ms-xl-3 ms-0">
                                 <div class="card first-card pt-4">
                                     <div class="card-body">
                                         <i class="bi bi-globe2 fs-3 d-inline-block mb-3 text-center"></i>
@@ -274,14 +282,75 @@
                 </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto" id="portfolio">
-
+        <section class="pt-5 long-section pb-md-0 pb-5" id="portfolio"
+            style="background-color: rgba(47, 128, 237, 0.3);">
+            <h2 class="text-center">My Recent Projects</h2>
+            <div class="heading-line"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center col-11 m-auto mb-md-0 mb-2">
+                <div class="d-flex scroll col-12" style="overflow-x: auto; overflow-y: hidden;">
+                    <div
+                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-md-6 project-box-first-div">
+                            <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
+                        </div>
+                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                            <h4 class="fs-2">Machu Picchu</h4>
+                            <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
+                            <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-md-6 project-box-first-div">
+                            <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
+                        </div>
+                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                            <h4 class="fs-2">Machu Picchu</h4>
+                            <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
+                            <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-md-6 project-box-first-div">
+                            <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
+                        </div>
+                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                            <h4 class="fs-2">Machu Picchu</h4>
+                            <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
+                            <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 me-5 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-md-6 project-box-first-div">
+                            <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
+                        </div>
+                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                            <h4 class="fs-2">Machu Picchu</h4>
+                            <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
+                            <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-md-2 project-box row-cols-1 px-md-4 py-md-5 py-3 px-2 bg-white col-8 mb-5 m-auto shadow">
+                        <div class="col-md-6 project-box-first-div">
+                            <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
+                        </div>
+                        <div class="col-md-6 pt-md-5 pt-0 ps-md-5 pe-md-5 text-md-start text-center pb-0">
+                            <h4 class="fs-2">Machu Picchu</h4>
+                            <p class="mt-3 fst-italic">Tools: HTML, CSS and JS</p>
+                            <button class="btn mybtn w-75 text-white mt-3 py-3">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="pt-5" id="reviews">
+        <section class="pt-5 long-section pb-sm-0 pb-5" id="reviews">
             <h2 class="text-center">Reviews</h2>
             <h6 class="text-center">What my clients says</h6>
             <div class="d-flex flex-column justify-content-center align-items-center m-auto">
-                <div id="carouselExampleIndicators" class="carousel slide col-10" data-bs-ride="true">
+                <div id="carouselExampleIndicators" class="carousel slide col-sm-10" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
@@ -309,8 +378,7 @@
                                     <i class="bi bi-star-fill text-warning fs-5"></i>
                                     <i class="bi bi-star-fill text-warning fs-5"></i>
                                     <i class="bi bi-star-half text-warning fs-5"></i>
-                                    <i class="bi bi-quote"
-                                        style="position: absolute; left: 0; bottom: 3rem; color: rgba(0, 0, 0,0.2); font-size: 7rem;"></i>
+                                    <i class="bi bi-quote"></i>
                                 </div>
                                 <div class="text-center mt-3">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ex nihil totam
@@ -336,8 +404,7 @@
                                     <i class="bi bi-star-fill text-warning fs-5"></i>
                                     <i class="bi bi-star-fill text-warning fs-5"></i>
                                     <i class="bi bi-star-half text-warning fs-5"></i>
-                                    <i class="bi bi-quote"
-                                        style="position: absolute; left: 0; bottom: 3rem; color: rgba(0, 0, 0,0.2); font-size: 7rem;"></i>
+                                    <i class="bi bi-quote"></i>
                                 </div>
                                 <div class="text-center mt-3">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ex nihil totam
@@ -359,22 +426,22 @@
                 </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto" id="contact"
-            style="background-color: rgba(47, 128, 237, 0.3);">
+        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-sm-0 py-5" id="contact"
+            style="background-color: rgba(47, 128, 237, 0.302);">
             <div class="col-11 m-auto">
-                <h2 class="text-center mb-5">Contact Me</h2>
-                <div class="row row-cols-2">
-                    <div class="col-6 intro">
-                        <div>
-                            <div class="d-flex align-items-center">
+                <h2 class="text-sm-center mb-sm-5 mb-4">Contact Me</h2>
+                <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col-sm-6 m-sm-0 col-9 m-auto intro">
+                        <div class="">
+                            <div class="d-flex align-items-center text-break">
                                 <i class="bi bi-telephone-inbound-fill fs-5"></i>
-                                <p class="ms-3 fs-5 mt-3">+2347050286131</p>
+                                <p class="ms-3 fs-5 mt-sm-3">+2347050286131</p>
                             </div>
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center text-break">
                                 <i class="bi bi-envelope-fill fs-5"></i>
                                 <p class="ms-3 fs-5 mt-3">ihemebiriegondu@gmail.com</p>
                             </div>
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center text-break">
                                 <i class="bi bi-geo-alt-fill fs-5"></i>
                                 <p class="ms-3 fs-5 mt-3">Lagos, Nigeria</p>
                             </div>
@@ -408,8 +475,8 @@
                                     style="height: 200px"></textarea>
                                 <label for="floatingTextarea2" class="text-white">Message</label>
                             </div>
-                            <div>
-                                <button type="submit" class="btn mybtn text-white mt-3 px-5 py-3">Send Message<i
+                            <div class="text-sm-start text-center">
+                                <button type="submit" class="btn mybtn text-white mt-sm-3 mt-4 px-5 py-3">Send Message<i
                                         class="bi bi-send mt-3 ms-3 fw-bold"
                                         style="color: rgb(177, 21, 208);"></i></button>
                             </div>
@@ -418,17 +485,30 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-light text-center py-4 shadow">
-            <i style="font-size: 14px;">&copy; Copywright 2022. ihemebiriegondu.com</i>
-        </footer>
+        <div class="d-flex flex-column px-4 me-3 rounded side-nav-container"
+            style="position: fixed; bottom: 7rem; right: 0; background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237));">
+            <div class="d-none flex-column pt-4 side-nav-div">
+                <a href="./index.html" class="mb-4 text-white"><i class="bi bi-house-door fs-3"></i></a>
+                <a href="#about-me" class="mb-4 text-white"><i class="bi bi-person-fill fs-3"></i></a>
+                <a href="#skills" class="mb-4 text-white"><i class="bi bi-file-earmark-code fs-3"></i></a>
+                <a href="#services" class="mb-4 text-white"><i class="bi bi-briefcase fs-3"></i></a>
+                <a href="#portfolio" class="mb-4 text-white"><i class="bi bi-image fs-3"></i></a>
+                <a href="#contact" class="mb-4 text-white"><i class="bi bi-send fs-3"></i></a>
+            </div>
+        </div>
+        <div class="side-nav-menu me-4 rounded-circle px-3 py-3 bg-light"
+            style="position: fixed; bottom: 2rem; right: 0; cursor: pointer; display: none; background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237));">
+            <i class="bi bi-three-dots fs-3"></i>
+        </div>
     </main>
-
+    <footer class="bg-light text-center py-4 shadow">
+        <i style="font-size: 14px;">&copy; Copywright 2022. ihemebiriegondu.com</i>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./js/fontawesome.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
