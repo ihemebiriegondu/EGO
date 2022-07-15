@@ -14,11 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="row">
-        <nav class="navbar-light navbar navbar-expand-lg sticky-top p-0 bg-light shadow-sm">
+    <header class="row" id="header">
+        <nav class="navbar-light navbar navbar-expand-lg p-0 bg-light shadow-sm">
             <div class="container-fluid col-12 m-auto d-flex justify-content-between">
                 <a class="navbar-brand" href="./index.html">
                     <h1 class="display-3 animate-character mb-0 pb-2">Ego</h1>
@@ -32,7 +33,7 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 me-auto me-lg-0 d-lg-flex d-none align-items-center mt-2">
                         <li class="nav-item p-0 h5 me-5">
                             <a class="nav-link only-nav p-0 pb-2 text-primary active" aria-current="page"
-                                href="./index.html">Home</a>
+                                href="#header">Home</a>
                         </li>
                         <li class="nav-item p-0 h5 me-5">
                             <a class="nav-link only-nav p-0 pb-2 text-primary" href="#about-me">About</a>
@@ -62,7 +63,7 @@
                         <div class="row row-cols-4 px-md-5">
                             <div class="">
                                 <li class="nav-item text-center p-0 h5 me-5 mb-4">
-                                    <a href="./index.html" class="mb-4 text-decoration-none text-dark">
+                                    <a href="#header" class="mb-4 text-decoration-none text-dark">
                                         <i class="bi bi-house-door fs-3"></i>
                                         <p class="h6-nav">Home</p>
                                     </a>
@@ -123,9 +124,9 @@
                 </div>
             </div>
         </nav>
-        <div class="header-img">
+        <div class="header-img p-0">
             <div class="header-div d-flex flex-column justify-content-center align-items-center m-auto">
-                <div class="row col-md-11 col-12 mt-md-5 mt-0 mx-auto">
+                <div class="row col-md-11 col-12 mt-md-5 mt-0 mx-auto p-3">
                     <div class="col-2 d-sm-flex d-none">
                         <div class="ms-md-3 d-flex ms-4 flex-column justify-content-center intro">
                             <a class="mb-4" target="_blank"
@@ -219,10 +220,10 @@
             </div>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-5"
-            id="skills" style="background-color: rgba(47, 128, 237, 0.04);">
+        <section class="d-flex flex-column justify-content-center align-items-center m-auto long-section py-5 skills"
+            id="skills">
             <div class="col-11 m-auto">
-                <div class="text-dark">
+                <div class="">
                     <h2 class="text-center mb-4">Skills</h2>
                     <div class="">
                         <div class="mb-4">
@@ -366,7 +367,7 @@
             <div class="d-flex flex-column justify-content-center align-items-center col-11 m-auto mb-xl-0 mb-2">
                 <div class="d-flex scroll col-12" style="overflow-x: auto; overflow-y: hidden;">
                     <div
-                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 col-8 mb-5 m-auto">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-3 me-md-5 col-8 mb-5 m-auto">
                         <div class="col-xl-6 project-box-first-div">
                             <img src="./images/Machu_Picchu,_Peru.jpg" class="rounded" alt="">
                         </div>
@@ -377,7 +378,7 @@
                         </div>
                     </div>
                     <div
-                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 col-8 mb-5 m-auto">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-3 me-md-5 col-8 mb-5 m-auto">
                         <div id="carouselExampleControls2" class="carousel slide col-xl-6 project-box-first-div"
                             data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -409,7 +410,7 @@
                         </div>
                     </div>
                     <div
-                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 col-8 mb-5 m-auto">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-3 me-md-5 col-8 mb-5 m-auto">
                         <div id="carouselExampleControls3" class="carousel slide col-xl-6 project-box-first-div"
                             data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -445,7 +446,7 @@
                         </div>
                     </div>
                     <div
-                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-5 col-8 mb-5 m-auto">
+                        class="row row-cols-xl-2 project-box row-cols-1 px-xl-4 py-xl-5 py-3 px-2 me-3 me-md-5 col-8 mb-5 m-auto">
                         <div id="carouselExampleControls4" class="carousel slide col-xl-6 project-box-first-div"
                             data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -554,8 +555,8 @@
                                     <i class="bi bi-quote"></i>
                                 </div>
                                 <div class="text-center mt-3 text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ex nihil totam
-                                    labore eos veritatis recusandae natus delectus. Numquam, quisquam.
+                                    A professional developer that understand what I wanted and why I wanted it. Working
+                                    with her was smooth. Good communication skills, professional and on time delivery
                                 </div>
                             </div>
                         </div>
@@ -605,7 +606,7 @@
                 <h2 class="text-sm-center mb-sm-5 mb-4">Contact Me</h2>
                 <div class="row row-cols-md-2 row-cols-1">
                     <div class="col-sm-6 m-sm-0 col-9 m-auto intro">
-                        <div class="">
+                        <div class="text-contact">
                             <div class="d-flex align-items-center text-break">
                                 <a class="text-decoration-none text-dark" href="tel:+2347050286131" target="_blank"><i
                                         class="bi bi-telephone-inbound-fill fs-5"></i></a>
@@ -691,7 +692,7 @@
         <div class="d-flex flex-column px-3 me-3 rounded side-nav-container"
             style="position: fixed; bottom: 7rem; right: 0; background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237));">
             <div class="d-none flex-column pt-4 side-nav-div">
-                <a href="./index.html" class="mb-1 text-dark text-center text-decoration-none">
+                <a href="#header" class="mb-1 text-dark text-center text-decoration-none">
                     <i class="bi bi-house-door fs-6"></i>
                     <p class="h6-sidenav">Home</p>
                 </a>

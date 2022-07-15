@@ -7,12 +7,16 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 section {
-    height: 100vh;
+    height: 100%;
     color: black;
     background-color: rgb(250, 252, 254);
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .modeSection {
@@ -22,6 +26,7 @@ section {
 
 .long-section {
     height: auto;
+    overflow-x: hidden;
 }
 
 .header-div {
@@ -53,6 +58,10 @@ section {
 
 .intro-text {
     width: 75%;
+}
+
+.text-contact{
+    font-family: 'Courgette', cursive;
 }
 
 .auto-typed-text {
@@ -108,8 +117,13 @@ section {
     font-weight: 500;
 }
 
-.modeAbout {
-    background-color: rgb(58, 57, 57);
+.skills {
+    background-color: rgba(47, 128, 237, 0.04);
+    overflow-x: hidden;
+}
+
+.modeSkills {
+    background-color: rgba(22, 53, 94, 0.8);
 }
 
 .about-me-img img {
@@ -119,6 +133,10 @@ section {
 
 .fs-sm-5 {
     font-size: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237), rgb(177, 21, 208));
 }
 
 .mode-progress-bar {
@@ -228,6 +246,13 @@ input:-webkit-autofill {
 
 
 
+@media (max-width: 1244px) {
+    .chevron-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 
 @media (max-width: 1200px) {
     #services {
@@ -255,6 +280,11 @@ input:-webkit-autofill {
         width: 100%;
         height: 100%;
     }
+
+    .chevron-container {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (max-width:1024px) {
@@ -265,7 +295,7 @@ input:-webkit-autofill {
 
     .project-box {
         height: 80vh;
-        width: 60%;
+        width: 70%;
     }
 
     .project-box p {
@@ -372,6 +402,11 @@ input:-webkit-autofill {
         height: 100%;
     }
 
+    .project-box {
+        height: 80vh;
+        width: 90%;
+    }
+
     .bi-quote {
         left: 0;
         bottom: 5rem;
@@ -388,6 +423,11 @@ input:-webkit-autofill {
         bottom: 5.5rem;
         font-size: 3rem;
     }
+
+    .project-box {
+        height: 80vh;
+        width: 95%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -395,10 +435,6 @@ input:-webkit-autofill {
         width: 100%;
         margin: auto;
         height: 60vh;
-    }
-
-    .about-me-img-first {
-        background-color: rgb(250, 252, 254);
     }
 }
 
@@ -413,6 +449,11 @@ input:-webkit-autofill {
     .bi-quote {
         bottom: 6rem;
         font-size: 2rem;
+    }
+
+    .project-box {
+        height: 80vh;
+        width: 100%;
     }
 }
 

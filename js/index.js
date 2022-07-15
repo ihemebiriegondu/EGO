@@ -7,7 +7,7 @@ const sideNavMenu = document.querySelector(".side-nav-menu");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         sideNavMenu.style.display = "block";
         sideNavDiv.classList.add("d-none");
         sideNavDiv.classList.remove("d-flex");
@@ -58,8 +58,8 @@ const body = document.querySelector("body");
 const allSections = document.querySelectorAll("section");
 const projectBoxes = document.querySelectorAll(".project-box");
 const biQuotes = document.querySelectorAll(".bi-quote");
-const progressBars = document.querySelectorAll(".progress-bar");
-const sideNavDivAs = document.querySelectorAll(".side-nav-div a")
+const sideNavDivAs = document.querySelectorAll(".side-nav-div a");
+const footer = document.querySelector("footer");
 
 modeTogglers.forEach(modeToggler => {
     let toogleModeFunction = () => {
@@ -85,17 +85,17 @@ modeTogglers.forEach(modeToggler => {
             biQuote.classList.toggle("mode-bi-quote");
         });
 
-        progressBars.forEach(progressBar => {
-            progressBar.classList.toggle("mode-progress-bar");
-        });
-
         sideNavDivAs.forEach(sideNavDivA => {
             sideNavDivA.classList.toggle("text-white");
         });
 
+        footer.classList.toggle("bg-dark");
+        footer.classList.toggle("text-white");
+
         document.querySelector(".about-me-img-first").classList.toggle("modeAbout");
         document.querySelector(".header-div").classList.toggle("modeHeader-div");
         document.querySelector(".bi-chevron-double-down").classList.toggle("text-white");
+        document.querySelector(".skills").classList.toggle("modeSkills");
     };
     modeToggler.addEventListener("click", toogleModeFunction);
 });
