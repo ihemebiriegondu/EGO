@@ -1,3 +1,7 @@
+.modeBody {
+    color: white;
+}
+
 .header-img {
     background-image: url('./images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg');
     height: 100vh;
@@ -7,6 +11,13 @@
 
 section {
     height: 100vh;
+    color: black;
+    background-color: rgb(250, 252, 254);
+}
+
+.modeSection {
+    background-color: rgb(27, 64, 66);
+    color: white;
 }
 
 .long-section {
@@ -16,6 +27,22 @@ section {
 .header-div {
     background-color: rgba(237, 249, 253, 0.7);
     height: 100%;
+    color: black;
+}
+
+.modeHeader-div {
+    background-color: rgba(131, 133, 133, 0.7);
+    height: 100%;
+    color: white;
+}
+
+.h6-nav {
+    font-size: 1rem;
+}
+
+.bi-moon,
+.bi-brightness-low {
+    cursor: pointer;
 }
 
 .intro i {
@@ -36,6 +63,10 @@ section {
 
 .mybtn {
     background: linear-gradient(45deg, rgb(47, 128, 237), rgb(71, 216, 245));
+}
+
+.mybtn:hover {
+    background: linear-gradient(45deg, rgb(13, 114, 247), rgb(15, 205, 243));
 }
 
 .chevron-container {
@@ -71,6 +102,16 @@ section {
     background-color: rgb(250, 252, 254);
 }
 
+.text {
+    font-size: 1.3rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 500;
+}
+
+.modeAbout {
+    background-color: rgb(58, 57, 57);
+}
+
 .about-me-img img {
     width: 100%;
     height: 100%;
@@ -80,8 +121,16 @@ section {
     font-size: 20px;
 }
 
+.mode-progress-bar {
+    background-color: rgba(0, 255, 255, 0.499);
+}
+
 .first-card {
     height: 262px;
+}
+
+h2 {
+    font-family: cursive;
 }
 
 .new-card {
@@ -92,6 +141,19 @@ section {
 .project-box {
     height: 25rem;
     border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.9rem rgb(0, 0, 0, 0.075);
+    transition: box-shadow 0.3s linear;
+}
+
+.project-box:hover {
+    box-shadow: 0 0.5rem 3rem rgb(0, 0, 0, 0.15)
+}
+
+.modeProjectBox {
+    height: 25rem;
+    border-radius: 20px;
+    background-color: rgb(27, 64, 66);
 }
 
 .project-box p {
@@ -99,7 +161,7 @@ section {
 }
 
 .project-box img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -112,8 +174,36 @@ section {
     font-size: 7rem;
 }
 
+.mode-bi-quote {
+    color: rgba(255, 255, 255, 0.604);
+}
+
 textarea {
     resize: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px black inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white;
+}
+
+.side-nav-menu {
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237));
+}
+
+.h6-sidenav {
+    font-size: 0.8rem;
 }
 
 .side-nav-div-animateIn {
@@ -190,6 +280,10 @@ textarea {
         width: 100%;
         height: 100%;
     }
+
+    .text {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 890px) {
@@ -197,9 +291,25 @@ textarea {
         font-size: 17px;
     }
 
+    .text {
+        font-size: 1.1rem;
+    }
+
     .project-box {
         height: 80vh;
         width: 80%;
+    }
+}
+
+@media (max-width: 844px) {
+    .h6-nav {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 773px) {
+    .h6-nav {
+        font-size: 0.7rem;
     }
 }
 
@@ -244,6 +354,12 @@ textarea {
     }
 }
 
+@media (max-width: 638px) {
+    .h6-nav {
+        font-size: 0.6rem;
+    }
+}
+
 @media (max-width: 576px) {
     .about-me-img {
         width: 60%;
@@ -259,15 +375,17 @@ textarea {
     .bi-quote {
         left: 0;
         bottom: 5rem;
-        color: rgba(0, 0, 0, 0.2);
         font-size: 6rem;
+    }
+
+    .h6-sidenav {
+        font-size: 0.6rem;
     }
 }
 
 @media (max-width: 440px) {
     .bi-quote {
         bottom: 5.5rem;
-        color: rgba(0, 0, 0, 0.2);
         font-size: 3rem;
     }
 }
@@ -287,7 +405,6 @@ textarea {
 @media (max-width: 391px) {
     .bi-quote {
         bottom: 5.5rem;
-        color: rgba(0, 0, 0, 0.2);
         font-size: 2rem;
     }
 }
@@ -295,7 +412,6 @@ textarea {
 @media (max-width: 363px) {
     .bi-quote {
         bottom: 6rem;
-        color: rgba(0, 0, 0, 0.2);
         font-size: 2rem;
     }
 }

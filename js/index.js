@@ -7,8 +7,10 @@ const sideNavMenu = document.querySelector(".side-nav-menu");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         sideNavMenu.style.display = "block";
+        sideNavDiv.classList.add("d-none");
+        sideNavDiv.classList.remove("d-flex");
     } else {
         sideNavMenu.style.display = "none";
     }
@@ -37,23 +39,84 @@ sections.forEach(section => {
     });
 });
 
-$(document).ready(function () {
-    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-});
-
 //drop shadow on navbar when scrolling
-let showBoxShadow = () => {
+/*let showBoxShadow = () => {
     const nav = document.querySelector("nav")
     var top = nav.offsetTop;
 
     if (window.pageYOffset > top) {
-        nav.classList.add("shadow-sm");
+        nav.classList.add("shadow-lg");
     } else {
-        nav.classList.remove("shadow-sm");
+        nav.classList.remove("shadow-lg");
     }
 };
-window.addEventListener("scroll", showBoxShadow);
+window.addEventListener("scroll", showBoxShadow);*/
 
+//toggle mode
+const modeTogglers = document.querySelectorAll(".mode-toggler");
+const body = document.querySelector("body");
+const allSections = document.querySelectorAll("section");
+const projectBoxes = document.querySelectorAll(".project-box");
+const biQuotes = document.querySelectorAll(".bi-quote");
+const progressBars = document.querySelectorAll(".progress-bar");
+const sideNavDivAs = document.querySelectorAll(".side-nav-div a")
+
+modeTogglers.forEach(modeToggler => {
+    let toogleModeFunction = () => {
+        if (modeToggler.classList.contains("bi-moon")) {
+            modeToggler.classList.remove("bi-moon");
+            modeToggler.classList.add("bi-brightness-low");
+            modeToggler.classList.add("fs-4");
+        } else {
+            modeToggler.classList.remove("fs-4");
+            modeToggler.classList.add("bi-moon");
+            modeToggler.classList.remove("bi-brightness-low");
+        }
+
+        body.classList.toggle("modeBody");
+        allSections.forEach(section => {
+            section.classList.toggle("modeSection");
+        });
+        projectBoxes.forEach(projectBox => {
+            projectBox.classList.toggle("modeProjectBox");
+        });
+
+        biQuotes.forEach(biQuote => {
+            biQuote.classList.toggle("mode-bi-quote");
+        });
+
+        progressBars.forEach(progressBar => {
+            progressBar.classList.toggle("mode-progress-bar");
+        });
+
+        sideNavDivAs.forEach(sideNavDivA => {
+            sideNavDivA.classList.toggle("text-white");
+        });
+
+        document.querySelector(".about-me-img-first").classList.toggle("modeAbout");
+        document.querySelector(".header-div").classList.toggle("modeHeader-div");
+        document.querySelector(".bi-chevron-double-down").classList.toggle("text-white");
+    };
+    modeToggler.addEventListener("click", toogleModeFunction);
+});
+
+//form message
+/*
+const form = document.querySelector("form");
+const inputs = document.querySelectorAll("input");
+
+let validateMessage = () => {
+    inputs.forEach(input => {
+        if (input.value === "") {
+            input.classList.add("is-invalid")
+            return
+        } 
+        input.value = "";
+    });
+    document.querySelector("textarea").value = "";
+};
+form.addEventListener("submit", validateMessage);
+*/
 // auto typing name 
 let autoTypedText = new Typed(".auto-typed-text", {
     strings: ["Egondu", "a Frontend Developer"],
