@@ -60,7 +60,7 @@ section {
     width: 75%;
 }
 
-.text-contact{
+.text-contact {
     font-family: 'Courgette', cursive;
 }
 
@@ -102,7 +102,8 @@ section {
 
 .about-me-img {
     width: 80%;
-    height: 90vh;
+    height: 90%;
+    margin-top: 3rem;
     position: static;
     background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237), rgb(177, 21, 208));
 }
@@ -132,7 +133,7 @@ section {
 }
 
 .modeAbout {
-    background-color: rgb(27, 64, 66);   
+    background-color: rgb(27, 64, 66);
 }
 
 .fs-sm-5 {
@@ -255,6 +256,13 @@ input:-webkit-autofill {
         position: absolute;
         bottom: 0;
     }
+
+    .bi-quote {
+        position: absolute;
+        left: 0;
+        bottom: 4rem;
+        font-size: 7rem;
+    }
 }
 
 
@@ -294,7 +302,7 @@ input:-webkit-autofill {
 @media (max-width:1024px) {
     .about-me-img {
         width: 100%;
-        height: 80vh;
+        height: 60%;
     }
 
     .project-box {
@@ -345,13 +353,19 @@ input:-webkit-autofill {
     .h6-nav {
         font-size: 0.7rem;
     }
+
+    .bi-quote {
+        left: 0;
+        bottom: 6rem;
+        font-size: 6rem;
+    }
 }
 
 @media (max-width: 768px) {
     .about-me-img {
         width: 100%;
-        margin: 1rem auto;
-        height: 90vh;
+        margin: 3rem auto;
+        height: 85%;
     }
 
     .about-me-img img {
@@ -392,13 +406,19 @@ input:-webkit-autofill {
     .h6-nav {
         font-size: 0.6rem;
     }
+
+    .bi-quote {
+        left: 0;
+        bottom: 5rem;
+        font-size: 6rem;
+    }
 }
 
 @media (max-width: 576px) {
     .about-me-img {
         width: 60%;
         margin: auto;
-        height: 50vh;
+        height: 50%;
     }
 
     .about-me-img img {
@@ -438,20 +458,27 @@ input:-webkit-autofill {
     .about-me-img {
         width: 100%;
         margin: auto;
-        height: 60vh;
+        height: 90%;
+    }
+}
+
+@media (max-width: 406px) {
+    .bi-quote {
+        bottom: 8rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 391px) {
     .bi-quote {
-        bottom: 5.5rem;
+        bottom: 8rem;
         font-size: 2rem;
     }
 }
 
 @media (max-width: 363px) {
     .bi-quote {
-        bottom: 6rem;
+        bottom: 8rem;
         font-size: 2rem;
     }
 
@@ -464,12 +491,30 @@ input:-webkit-autofill {
 @media (max-width: 340px) {
     .bi-quote {
         font-size: 2rem;
-        bottom: 7rem;
+        bottom: 8rem;
+    }
+}
+
+@media (max-width: 317px) {
+    .bi-quote {
+        bottom: 9.2rem;
     }
 }
 
 @media (max-width: 297px) {
     .bi-quote {
-        bottom: 9rem;
+        bottom: 9.5rem;
+    }
+}
+
+@media (max-width: 282px) {
+    .bi-quote {
+        bottom: 11rem;
+    }
+}
+
+@media (max-width: 249px) {
+    .bi-quote {
+        display: none;
     }
 }
