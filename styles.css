@@ -131,6 +131,10 @@ section {
     height: 100%;
 }
 
+.modeAbout {
+    background-color: rgb(27, 64, 66);   
+}
+
 .fs-sm-5 {
     font-size: 20px;
 }
