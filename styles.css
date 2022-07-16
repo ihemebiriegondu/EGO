@@ -304,10 +304,9 @@ input:-webkit-autofill {
         height: 60%;
     }
 
-    /*.project-box {
-        height: 80vh;
+    .project-box {
         width: 70%;
-    }*/
+    }
 
     .project-box p {
         font-size: 17px;
@@ -337,7 +336,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+      
         width: 80%;
     }
 }
@@ -377,7 +376,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+        
         width: 85%;
     }
 
@@ -430,7 +429,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+        
         width: 90%;
     }
 
@@ -452,7 +451,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+        
         width: 95%;
     }
 }
@@ -486,7 +485,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+        
         width: 100%;
     }
 }
