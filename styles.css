@@ -102,8 +102,7 @@ section {
 
 .about-me-img {
     width: 80%;
-    height: 90%;
-    margin-top: 3rem;
+    height: 70%;
     position: static;
     background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237), rgb(177, 21, 208));
 }
@@ -145,7 +144,7 @@ section {
 }
 
 .mode-progress-bar {
-    background-color: rgba(0, 255, 255, 0.499);
+    background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237), rgb(177, 21, 208));   
 }
 
 .first-card {
@@ -276,7 +275,7 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        height: 80vh;
+        height: 40rem;
         width: 60%;
     }
 
@@ -365,7 +364,7 @@ input:-webkit-autofill {
     .about-me-img {
         width: 100%;
         margin: 3rem auto;
-        height: 85%;
+        height: 60%;
     }
 
     .about-me-img img {
@@ -416,9 +415,13 @@ input:-webkit-autofill {
 
 @media (max-width: 576px) {
     .about-me-img {
-        width: 60%;
+        width: 100%;
         margin: auto;
-        height: 50%;
+        height: 100%;
+    }
+
+    .about-me-container{
+        height: 560px;
     }
 
     .about-me-img img {
@@ -458,7 +461,7 @@ input:-webkit-autofill {
     .about-me-img {
         width: 100%;
         margin: auto;
-        height: 90%;
+        height: 80%;
     }
 }
 
