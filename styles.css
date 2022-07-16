@@ -304,10 +304,10 @@ input:-webkit-autofill {
         height: 60%;
     }
 
-    .project-box {
+    /*.project-box {
         height: 80vh;
         width: 70%;
-    }
+    }*/
 
     .project-box p {
         font-size: 17px;
