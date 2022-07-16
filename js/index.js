@@ -52,6 +52,22 @@ sections.forEach(section => {
 };
 window.addEventListener("scroll", showBoxShadow);*/
 
+//toggle nav icon
+const toggleNav = document.querySelector(".toggle-btn");
+let toggleNavFunction = () => {
+    if (toggleNav.classList.contains("navbar-toggler-icon")) {
+        toggleNav.classList.remove("navbar-toggler-icon")
+        toggleNav.classList.add("bi-x-lg");
+        toggleNav.classList.add("h3");
+    } else {
+        toggleNav.classList.add("navbar-toggler-icon")
+        toggleNav.classList.remove("bi-x-lg");
+        toggleNav.classList.remove("h3");
+    }
+};
+toggleNav.addEventListener("click", toggleNavFunction);
+
+
 //toggle mode
 const modeTogglers = document.querySelectorAll(".mode-toggler");
 const body = document.querySelector("body");
@@ -60,6 +76,7 @@ const projectBoxes = document.querySelectorAll(".project-box");
 const biQuotes = document.querySelectorAll(".bi-quote");
 const sideNavDivAs = document.querySelectorAll(".side-nav-div a");
 const footer = document.querySelector("footer");
+const firstCards = document.querySelectorAll(".first-card");
 
 modeTogglers.forEach(modeToggler => {
     let toogleModeFunction = () => {
@@ -89,13 +106,27 @@ modeTogglers.forEach(modeToggler => {
             sideNavDivA.classList.toggle("text-white");
         });
 
+        firstCards.forEach(firstCard => {
+            firstCard.classList.toggle("modeFirstCard");
+            firstCard.classList.toggle("text-white");
+        });
+
         footer.classList.toggle("bg-dark");
         footer.classList.toggle("text-white");
 
-        document.querySelector(".about-me-img-first").classList.toggle("modeAbout");
         document.querySelector(".header-div").classList.toggle("modeHeader-div");
         document.querySelector(".bi-chevron-double-down").classList.toggle("text-white");
         document.querySelector(".skills").classList.toggle("modeSkills");
+        if (modeToggler.classList.contains("bi-moon")) {
+            document.getElementById("first-img").setAttribute("src", "./images/responsive-icon-24441.png");
+            document.getElementById("second-img").setAttribute("src", "./images/icons8-layout-64.png");
+            document.getElementById("third-img").setAttribute("src", "./images/icons8-website-64.png");
+        } else {
+            document.getElementById("first-img").setAttribute("src", "./images/icons8-responsive-64.png");
+            document.getElementById("second-img").setAttribute("src", "./images/icons8-layout-64 (1).png");
+            document.getElementById("third-img").setAttribute("src", "./images/icons8-website-64 (1).png");
+        }
+
     };
     modeToggler.addEventListener("click", toogleModeFunction);
 });

@@ -108,7 +108,7 @@ section {
 }
 
 .about-me-img-first {
-    background-color: rgb(250, 252, 254);
+    background-color: black;
 }
 
 .text {
@@ -129,10 +129,7 @@ section {
 .about-me-img img {
     width: 100%;
     height: 100%;
-}
-
-.modeAbout {
-    background-color: rgb(27, 64, 66);
+    object-fit: contain;
 }
 
 .fs-sm-5 {
@@ -170,6 +167,14 @@ h2 {
 
 .project-box:hover {
     box-shadow: 0 0.5rem 3rem rgb(0, 0, 0, 0.15)
+}
+
+.project-box-first-div img {
+    transition: transform 0.5s linear;
+}
+
+.project-box-first-div img:hover{
+    transform: scale(1.1);
 }
 
 .modeProjectBox {
@@ -219,6 +224,7 @@ input:-webkit-autofill {
     position: fixed;
     bottom: 2rem;
     right: 0;
+    z-index: 1;
     cursor: pointer;
     display: none;
     background: linear-gradient(45deg, rgb(71, 216, 245), rgb(47, 128, 237));
@@ -304,9 +310,10 @@ input:-webkit-autofill {
         height: 60%;
     }
 
-    .project-box {
+    /*.project-box {
+        height: 80vh;
         width: 70%;
-    }
+    }*/
 
     .project-box p {
         font-size: 17px;
@@ -336,7 +343,6 @@ input:-webkit-autofill {
     }
 
     .project-box {
-      
         width: 80%;
     }
 }
@@ -376,7 +382,6 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        
         width: 85%;
     }
 
@@ -429,7 +434,6 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        
         width: 90%;
     }
 
@@ -451,7 +455,6 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        
         width: 95%;
     }
 }
@@ -485,7 +488,6 @@ input:-webkit-autofill {
     }
 
     .project-box {
-        
         width: 100%;
     }
 }
