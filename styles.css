@@ -149,7 +149,7 @@ section {
 }
 
 .first-card {
-    height: 220px;
+    height: 210px;
 }
 
 h2 {
@@ -483,6 +483,10 @@ input:-webkit-autofill {
         bottom: 8rem;
         font-size: 2rem;
     }
+
+    .first-card {
+        height: 230px;
+    }
 }
 
 @media (max-width: 363px) {
@@ -518,6 +522,10 @@ input:-webkit-autofill {
 @media (max-width: 282px) {
     .bi-quote {
         bottom: 11rem;
+    }
+
+    .first-card {
+        height: 260px;
     }
 }
 
