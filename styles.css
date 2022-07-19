@@ -150,6 +150,12 @@ section {
 
 .first-card {
     height: 210px;
+    transition: transform 0.5s linear;
+}
+
+.first-card:hover{
+    transform: scale(1.001);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
