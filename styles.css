@@ -113,7 +113,7 @@ section {
 
 .about-me-img-first {
     background-color: black;
-    transition: transform 1s linear;
+    transition: transform 0.9s linear;
 }
 
 .about-me-img-first:hover {
@@ -207,7 +207,9 @@ h2 {
     height: 100%;
 }
 
-.direction-btns:hover, .direction-btns:active, .direction-btns:focus {
+.direction-btns:hover,
+.direction-btns:active,
+.direction-btns:focus {
     color: blueviolet;
 }
 
@@ -274,6 +276,15 @@ input:-webkit-autofill {
 
 
 
+@media (max-width: 1500px) {
+    .bi-quote {
+        position: absolute;
+        left: 0;
+        bottom: 4rem;
+        font-size: 7rem;
+    }
+}
+
 @media (max-width: 1244px) {
     .chevron-container {
         position: absolute;
@@ -304,6 +315,15 @@ input:-webkit-autofill {
     }
 }
 
+@media (max-width: 1033px) {
+    .bi-quote {
+        position: absolute;
+        left: 0;
+        bottom: 6rem;
+        font-size: 7rem;
+    }
+}
+
 @media (max-width:1024px) {
     .about-me-img {
         width: 100%;
@@ -326,6 +346,22 @@ input:-webkit-autofill {
 
     .text {
         font-size: 1.2rem;
+    }
+
+    .bi-quote {
+        position: absolute;
+        left: 0;
+        bottom: 4rem;
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 965px) {
+    .bi-quote {
+        position: absolute;
+        left: 0;
+        bottom: 6rem;
+        font-size: 7rem;
     }
 }
 
@@ -409,6 +445,14 @@ input:-webkit-autofill {
     }
 }
 
+@media (max-width: 583px) {
+    .bi-quote {
+        left: 0;
+        bottom: 8rem;
+        font-size: 6rem;
+    }
+}
+
 @media (max-width: 576px) {
     .about-me-img {
         width: 100%;
@@ -425,20 +469,29 @@ input:-webkit-autofill {
         height: 100%;
     }
 
-    .bi-quote {
-        left: 0;
-        bottom: 5rem;
-        font-size: 6rem;
-    }
-
     .h6-sidenav {
         font-size: 0.6rem;
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 575px) {
     .bi-quote {
-        bottom: 5.5rem;
+        left: 0;
+        bottom: 5rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 486px) {
+    .bi-quote {
+        bottom: 8rem;
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 406px) {
+    .bi-quote {
+        bottom: 8rem;
         font-size: 3rem;
     }
 }
@@ -451,17 +504,10 @@ input:-webkit-autofill {
     }
 }
 
-@media (max-width: 406px) {
-    .bi-quote {
-        bottom: 8rem;
-        font-size: 3rem;
-    }
-}
-
 @media (max-width: 391px) {
     .bi-quote {
         bottom: 8rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .first-card {
@@ -469,36 +515,35 @@ input:-webkit-autofill {
     }
 }
 
-@media (max-width: 363px) {
+@media (max-width: 380px) {
     .bi-quote {
-        bottom: 8rem;
-        font-size: 2rem;
+        bottom: 10rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .bi-quote {
+        bottom: 12rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 340px) {
     .bi-quote {
-        font-size: 2rem;
-        bottom: 8rem;
+        font-size: 2.5rem;
+        bottom: 12rem;
     }
 }
 
-@media (max-width: 317px) {
+@media (max-width: 312px) {
     .bi-quote {
-        bottom: 9.2rem;
-    }
-}
-
-@media (max-width: 297px) {
-    .bi-quote {
-        bottom: 9.5rem;
+        bottom: 13rem;
     }
 }
 
 @media (max-width: 282px) {
-    .bi-quote {
-        bottom: 11rem;
-    }
+    
 
     .first-card {
         height: 260px;
