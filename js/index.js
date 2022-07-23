@@ -11,8 +11,6 @@ function scrollFunction() {
         sideNavMenu.style.display = "block";
         sideNavDiv.classList.add("d-none");
         sideNavDiv.classList.remove("d-flex");
-    } else {
-        sideNavMenu.style.display = "none";
     }
 }
 
@@ -38,6 +36,30 @@ sections.forEach(section => {
         sideNavDiv.classList.remove("d-flex");
     });
 });
+
+const header = document.querySelector("header");
+header.addEventListener("click", function () {
+    sideNavDiv.classList.add("d-none");
+    sideNavDiv.classList.remove("d-flex");
+});
+
+//scrolling projects
+
+function slide(direction) {
+    var scroll = document.querySelector(".scroll");
+    scrollCompleted = 0;
+    var slideVar = setInterval(function () {
+        if (direction == 'left') {
+            scroll.scrollLeft -= 100;
+        } else {
+            scroll.scrollLeft += 100;
+        }
+        scrollCompleted += 10;
+        if (scrollCompleted >= 100) {
+            window.clearInterval(slideVar);
+        }
+    }, 30);
+}
 
 //drop shadow on navbar when scrolling
 /*let showBoxShadow = () => {
