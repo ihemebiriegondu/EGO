@@ -60,6 +60,8 @@ function slide(direction) {
         }
     }, 30);
 }
+ 
+//form submission
 
 var formdata = new FormData();
 formdata.append("Name", "Welcome to ActionForms.io");
