@@ -61,6 +61,27 @@ function slide(direction) {
     }, 30);
 }
 
+var formdata = new FormData();
+formdata.append("Name", "Welcome to ActionForms.io");
+formdata.append("Email", "Welcome to ActionForms.io");
+formdata.append("Phone Number", "Welcome to ActionForms.io");
+formdata.append("Your Message", "Welcome to ActionForms.io");
+
+var requestOptions = {
+    method: 'POST',
+    body: formdata,
+    redirect: 'follow',
+    headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+};
+
+fetch("https://www.actionforms.io/e/r/ihemebiri-egondu-test", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
 //drop shadow on navbar when scrolling
 /*let showBoxShadow = () => {
     const nav = document.querySelector("nav")
