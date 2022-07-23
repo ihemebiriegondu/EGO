@@ -50,9 +50,9 @@ function slide(direction) {
     scrollCompleted = 0;
     var slideVar = setInterval(function () {
         if (direction == 'left') {
-            scroll.scrollLeft -= 100;
+            scroll.scrollLeft -= screen.width / 15;
         } else {
-            scroll.scrollLeft += 100;
+            scroll.scrollLeft += screen.width / 15;
         }
         scrollCompleted += 10;
         if (scrollCompleted >= 100) {
