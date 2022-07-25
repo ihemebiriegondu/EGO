@@ -64,6 +64,18 @@ section {
     width: 75%;
 }
 
+.new-intro i, header .btn, .side-nav-menu, header h1, header p{
+    animation: showI 1s linear;
+}
+
+@keyframes showI {
+    from{
+        opacity: 0;
+    } to {
+        opacity: 100;
+    }
+}
+
 .text-contact {
     font-family: 'Courgette', cursive;
 }
