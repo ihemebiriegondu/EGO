@@ -201,6 +201,8 @@ let autoTypedText = new Typed(".auto-typed-text", {
     loop: true
 });
 
+//for small screens
+
 let secondAutoTypedText = new Typed(".second-auto-typed-text", {
     strings: ["Egondu", "a Frontend Developer"],
     typeSpeed: 100,
